@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Database</h1>
+
+        <h2>Add Student</h2>
+
+        <form id="studentForm">
+
+            <input type="text" id="name" placeholder="Student Name" required>
+
+            <input type="text" id="usn" placeholder="Student USN" required>
+
+            <input type="text" id="dept" placeholder="Department" required>
+
+            <input type="number" id="sub1" placeholder="Subject 1 Marks" required>
+
+            <input type="number" id="sub2" placeholder="Subject 2 Marks" required>
+
+            <input type="number" id="sub3" placeholder="Subject 3 Marks" required>
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+        <h2>Student Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>Dept</th>
+                    <th>Sub1</th>
+                    <th>Sub2</th>
+                    <th>Sub3</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
